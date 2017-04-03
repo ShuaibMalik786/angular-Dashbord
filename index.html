@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AapkaPainter</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap-paper.css">
+<link rel="stylesheet" href="style.css">
+
+<script src="jquery-3.2.0.js"></script>
+<script src="angular.js"></script>
+<script src="angular-route.js"></script>
+<script src="bootstrap.js"></script>
+<script src="app.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+
+<body ng-app="mainApp">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <img class="navbar-brand" src="images/logo.jpg" style="padding: 10px;padding-left: 30px;padding-right: 30px">
+
+                <div class="form-group navbar-brand" style="padding: 0px;margin: 0px;margin-top: 5px;margin-bottom: 5px;padding-left: 20px;border-left: 1px solid">
+                    <label for="sel1" style="font-size: 13px;padding: 0px;margin: 0px">City:</label>
+                    <select class="form-control" id="sel1">
+            <option>Bangalore</option>
+            <option>Mumbai</option>
+            <option>Delhi</option>
+        </select>
+                </div>
+            </div>
+
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Services 1</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Services 2</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Services 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Paint Products</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle fa fa-user" data-toggle="dropdown" role="button" aria-expanded="false"> Hi Hemanth <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Link 1</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <i class="fa fa-bars" aria-hidden="true" style="margin: 25px"></i>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div id="space">
+
+        <div cls="col-md-12">
+            <div class="col-md-8 col-xs-12 col-sm-8 sm-shadow" id="select">
+                <div class="col-md-11 col-xs-11" id="selected">
+                </div>
+                <i class=" fa fa-caret-down fa-2x" style="color:grey;padding-right: 0px;padding-top:1%;padding-bottom:1%;float: right"></i>
+                <div class="option col-md-12 col-xs-12">
+                    Bolvia Appartments<br> Ramagondanahalli, Varth, whitefield
+                </div>
+                <div class="option col-md-12 col-xs-12 col-sm-12">
+                    Prestige Appartments<br> Yelahanka, New town, bangalore
+                </div>
+                <div class="option col-md-12 col-xs-12 col-sm-12">
+                    Oabcd Appartments<br> Ulsoor , Bangalore
+                </div>
+                <div class="option col-md-12 col-xs-12 col-sm-12">
+                    Abcd Appartments<br> Yelahanka, New town, Bangalore North
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12 paddingtop" id="paddingtop">
+                <div class="col-md-7 col-xs-4">
+                    <img class="w3-circle" src="images/person.png" style="padding: 0px;float: right;border-radius: 50px;">
+                </div>
+                <div class="col-md-5 col-xs-8">
+                    <div class="row">
+                        <p style="color: black">ENGINEER INFO</p>
+                        <div>
+                            <p>Pharalad Malvia 9578452645 <br/> Project@painter.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-xs-12" style="">
+            <div class="col-d-4 col-xs-12 sm-shadow" style="padding: 0;margin: 2%;margin-top: 70px">
+                <div class="col-md-12 col-xs-12" style="background-color: white;" href="#red">
+                    <a href="#measurement"><img class="icon sm-shadow" src="images/icon1.png"></a>
+                    <p style="float:right;font-size:16px;padding-top: 10%;padding-bottom: 8%">Measurement</p>
+                </div>
+                <div class="col-md-12 col-xs-12 white" style="font-size: 12px;background-color:orange;padding: 0">
+                    <div class="col-md-12 col-xs-12" style="padding: 0">
+                        <div class="col-md-7 col-xs-6">
+                            <font>Total wall area</font>
+                        </div>
+                        <div class="col-md-5 col-xs-6" style="padding: 0">
+                            <font>:1478 sqft</font>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12" style="padding: 0">
+                        <div class="col-md-7 col-xs-6">
+                            <font>Total Ceiling area</font>
+                        </div>
+                        <div class="col-md-5 col-xs-6" style="padding: 0">
+                            <font>:1478 sqft</font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-d-4 col-xs-12 sm-shadow" style="padding: 0;margin: 2%;margin-top: 70px">
+                <div class="col-md-12 col-xs-12" style="background-color: white;">
+                    <a href="#quotation"><img class="icon sm-shadow" src="images/icon2.png"></a>
+                    <p style="float:right;font-size:16px;padding-top: 10%;padding-bottom: 8%">Quaotation</p>
+                </div>
+                <div class="col-md-12 col-xs-12 white" style="font-size: 12px;background-color: dodgerblue;padding: 0">
+                    <div class="col-md-12 col-xs-12" style="padding: 0">
+                        <div class="col-md-7 col-xs-6">
+                            <font>Total wall area</font>
+                        </div>
+                        <div class="col-md-5 col-xs-6" style="padding: 0">
+                            <font>:1478 sqft</font>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12" style="padding: 0">
+                        <div class="col-md-7 col-xs-6">
+                            <font>Total Ceiling area</font>
+                        </div>
+                        <div class="col-md-5 col-xs-6" style="padding: 0">
+                            <font>:1478 sqft</font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-d-4 col-xs-12 sm-shadow" style="padding: 0;margin: 2%;margin-top: 70px">
+                <div class="col-md-12 col-xs-12" style="background-color: white;">
+                    <a href="#payment"><img class="icon sm-shadow" src="images/icon3.png"></a>
+                    <p style="float:right;font-size:16px;padding-top: 10%;padding-bottom: 8%">Payment</p>
+                </div>
+
+                <div class="col-md-12 col-xs-12 white" style="font-size: 12px;background-color: limegreen;padding: 0">
+                    <div class="col-md-12 col-xs-12" style="padding: 0">
+                        <div class="col-md-7 col-xs-6">
+                            <font>Total wall area</font>
+                        </div>
+                        <div class="col-md-5 col-xs-6" style="padding: 0">
+                            <font>:1478 sqft</font>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12" style="padding: 0">
+                        <div class="col-md-7 col-xs-6">
+                            <font>Total Ceiling area</font>
+                        </div>
+                        <div class="col-md-5 col-xs-6" style="padding: 0">
+                            <font>:1478 sqft</font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-d-4 col-xs-12 sm-shadow" style="padding: 0;margin: 2%;margin-top: 70px">
+                <div class="col-md-12 col-xs-12" style="background-color: white;">
+                    <a href="#progress"><img class="icon sm-shadow" src="images/icon4.png"></a>
+                    <p style="float:right;font-size:16px;padding-top: 10%;padding-bottom: 8%">Progress</p>
+                </div>
+                <div class="col-md-12 col-xs-12 white" style="font-size: 12px;background-color: rebeccapurple;padding: 0">
+                    <div class="col-md-12 col-xs-12" style="padding: 0">
+                        <div class="col-md-7 col-xs-6">
+                            <font>Total wall area</font>
+                        </div>
+                        <div class="col-md-5 col-xs-6" style="padding: 0">
+                            <font>:1478 sqft</font>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12" style="padding: 0">
+                        <div class="col-md-7 col-xs-6">
+                            <font>Total Ceiling area</font>
+                        </div>
+                        <div class="col-md-5 col-xs-6" style="padding: 0">
+                            <font>:1478 sqft</font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-xs-12 sm-shadow" style="background-color: white; padding: 0;margin-top: 70px;margin-bottom: 50px;">
+            <div ng-view></div>
+        </div>
+
+        <script type="text/ng-template" id="measurement.htm">
+            <img src="images/measurementhelp.png" style="position: absolute;right: 0px;bottom: 0px">
+            <div class="tab1">
+                <button class="tablinks" onclick="openCity(event, 'livingRoom')" id="defaultOpen">LIVING ROOM</button>
+                <button class="tablinks" onclick="openCity(event, 'kitchen')">KITCHEN</button>
+                <button class="tablinks" onclick="openCity(event, 'bedroom1')">BEDROOM 1</button>
+                <button class="tablinks" onclick="openCity(event, 'bedroom2')">BEDROOM 2</button>
+                <button class="tablinks" onclick="openCity(event, 'bedroom3')">BEDROOM 3</button>
+            </div>
+
+            <div id="livingRoom" class="tabcontent1">
+                <div class=" margintd">
+                    <table>
+                        <tr>
+                            <th class="col-md-2 col-xs-2">S.NO</th>
+                            <th class="col-md-6 col-xs-6">Total Wall Area</th>
+                            <th class="col-md-4 col-xs-4">Total Ceiling Area</th>
+                        </tr>
+                        <tr>
+                            <td class="col-md-2 col-xs-2">1</td>
+                            <td class="col-md-6 col-xs-6">Wall 1 : 191 Sqft</td>
+                            <td class="col-md-4 col-xs-4">Ceiling : 293 Sqft</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-2 col-xs-2">2</td>
+                            <td class="col-md-6 col-xs-6">Wall 1 : 191 Sqft</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-2 col-xs-2">3</td>
+                            <td class="col-md-6 col-xs-6">Wall 1 : 191 Sqft</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-2 col-xs-2">4</td>
+                            <td class="col-md-6 col-xs-6">Wall 1 : 191 Sqft</td>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+            <div id="kitchen" class="tabcontent1">
+                <h3>kitchen</h3>
+            </div>
+
+            <div id="bedroom1" class="tabcontent1">
+                <h3>bedroom1</h3>
+            </div>
+
+            <div id="bedroom2" class="tabcontent1">
+                <h3>bedroom2</h3>
+            </div>
+
+            <div id="bedroom3" class="tabcontent1">
+                <h3>bedroom3</h3>
+            </div>
+
+            <script>
+                function openCity(evt, cityName) {
+                                var i, tabcontent, tablinks;
+                                tabcontent = document.getElementsByClassName("tabcontent1");
+                                for (i = 0; i < tabcontent.length; i++) {
+                                    tabcontent[i].style.display = "none";
+                                }
+                                tablinks = document.getElementsByClassName("tablinks");
+                                for (i = 0; i < tablinks.length; i++) {
+                                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                }
+                                document.getElementById(cityName).style.display = "block";
+                                evt.currentTarget.className += " active";
+                            }
+
+                            // Get the element with id="defaultOpen" and click on it
+                            document.getElementById("defaultOpen").click();
+            </script>
+
+        </script>
+
+        <script type="text/ng-template" id="quotation.htm">
+            <img src="images/quotationhelp.png" style="position: absolute;right: 0px;bottom: 0px">
+            <div class="tab2">
+                <button class="tablinks" onclick="openCity(event, 'quotation1')" id="defaultOpen">QUOTATION 1</button>
+                <button class="tablinks" onclick="openCity(event, 'quotation2')">QUOTATION 2</button>
+                <button class="tablinks" onclick="openCity(event, 'quotation3')">QUOTATION 3</button>
+                <button class="tablinks" onclick="openCity(event, 'quotation4')">QUOTATION 4</button>
+            </div>
+
+            <div id="quotation1" class="tabcontent2 scroll">
+                <div class="col-md-12 col-xs-12 nopadding" style=" color: dodgerblue;width: 100%;font-size: 20px;padding-bottom:5%;padding-top: 2%"
+                    align="right">
+                    <div class="col-md-5 col-xs-12">
+                        <font>Make another Quotation</font>&nbsp&nbsp&nbsp&nbsp
+                    </div>
+                    <div class="col-md-5 col-xs-10">
+                        <font>Avail Color Consultancy</font>
+                    </div>
+                    <div class="col-md-2 col-xs-2">
+                        <i class="fa fa-download"></i>
+                    </div>
+                </div>
+
+
+                <table>
+                    <tr>
+                        <th>S.NO</th>
+                        <th>Product</th>
+                        <th>Process</th>
+                        <th>Details of area covered</th>
+                        <th>Total Area (Sqft)</th>
+                        <th>Unit rate(Rs/Sqft)</th>
+                        <th>Total(Rs)</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Tractor Emulsion</td>
+                        <td>2P</td>
+                        <td>Ceiling</td>
+                        <td>694</td>
+                        <td>8</td>
+                        <td>5525/-</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Tractor Emulsion</td>
+                        <td>2P</td>
+                        <td>Ceiling</td>
+                        <td>694</td>
+                        <td>8</td>
+                        <td>5525/-</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Tractor Emulsion</td>
+                        <td>2P</td>
+                        <td>Ceiling</td>
+                        <td>694</td>
+                        <td>8</td>
+                        <td>5525/-</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Tractor Emulsion</td>
+                        <td>2P</td>
+                        <td>Ceiling</td>
+                        <td>694</td>
+                        <td>8</td>
+                        <td>5525/-</td>
+                    </tr>
+                </table>
+
+                <div class="col-md-12" style="border-bottom: 1px solid lightgrey;">
+                    <div class="col-md-6 col-xs-12">
+                        <font>Colors selected</font> <img src="images/color.png"><a>More</a>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <font> Total payable amount : Rs 53245</font>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" align="center">
+                        <div class="checkbox">
+                            <label style="padding: 30px">
+                                                <input type="checkbox"> I accept the <a>Terms</a>
+                                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-12" align="center">
+                          <font>* Please pay 40% to proceed</font>
+                    </div>
+                    <div class="col-md-12" style="margin: 15px 16px" align="center">
+                        <a style="border-radius: 30px; padding: 8px 50px;font-size:20px" class="btn btn-primary">Pay Now</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+                    <div id="quotation2" class="tabcontent2">
+                        <h3>quotation2</h3>
+                    </div>
+
+                    <div id="quotation3" class="tabcontent2">
+                        <h3>quotation3</h3>
+                    </div>
+
+                    <div id="quotation4" class="tabcontent2">
+                        <h3>quotation4</h3>
+                    </div>
+
+                    <script>
+                function openCity(evt, cityName) {
+                                        var i, tabcontent, tablinks;
+                                        tabcontent = document.getElementsByClassName("tabcontent2");
+                                        for (i = 0; i < tabcontent.length; i++) {
+                                            tabcontent[i].style.display = "none";
+                                        }
+                                        tablinks = document.getElementsByClassName("tablinks");
+                                        for (i = 0; i < tablinks.length; i++) {
+                                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                        }
+                                        document.getElementById(cityName).style.display = "block";
+                                        evt.currentTarget.className += " active";
+                                    }
+
+                                    // Get the element with id="defaultOpen" and click on it
+                                    document.getElementById("defaultOpen").click();
+                    </script>
+        </script>
+
+        <script type="text/ng-template" id="payment.htm">
+            <img src="images/paymenthelp.png" style="position: absolute;right: 0px;bottom: 0px">
+            <div class="tab3">
+                <button class="tablinks" onclick="openCity(event, 'firstMilestone')" id="defaultOpen">FIRST</br>MILESTONE</button>
+                <button class="tablinks" onclick="openCity(event, 'secondMilestone')">SECOND</br> MILESTONE</button>
+                <button class="tablinks" onclick="openCity(event, 'thirdMilestone')">THIRD</br> MILESTONE</button>
+
+            </div>
+
+            <div id="firstMilestone" class="tabcontent3">
+                <h3>firstMilestone</h3>
+            </div>
+
+            <div id="secondMilestone" class="tabcontent3">
+                <h3>secondMilestone</h3>
+            </div>
+
+            <div id="thirdMilestone" class="tabcontent3">
+                <h3>thirdMilestone</h3>
+            </div>
+
+            <script>
+                function openCity(evt, cityName) {
+                                    var i, tabcontent, tablinks;
+                                    tabcontent = document.getElementsByClassName("tabcontent3");
+                                    for (i = 0; i < tabcontent.length; i++) {
+                                        tabcontent[i].style.display = "none";
+                                    }
+                                    tablinks = document.getElementsByClassName("tablinks");
+                                    for (i = 0; i < tablinks.length; i++) {
+                                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                    }
+                                    document.getElementById(cityName).style.display = "block";
+                                    evt.currentTarget.className += " active";
+                                }
+
+                                // Get the element with id="defaultOpen" and click on it
+                                document.getElementById("defaultOpen").click();
+            </script>
+        </script>
+
+        <script type="text/ng-template" id="progress.htm">
+            <img src="images/progresshelp.png" style="position: absolute;right: 0px;bottom: 0px; margin-top: 20px;">
+            <div class="tab4">
+                <button class="tablinks" onclick="openCity(event, 'painting')" id="defaultOpen">PAINTING</button>
+                <button class="tablinks" onclick="openCity(event, 'waterProofing')">WATER PROOFING</button>
+                <button class="tablinks" onclick="openCity(event, 'deepCleaning')">DEEP CLEANING</button>
+
+            </div>
+
+            <div id="painting" class="tabcontent4">
+                <h3>painting</h3>
+            </div>
+
+            <div id="waterProofing" class="tabcontent4">
+                <h3>waterProofing</h3>
+            </div>
+
+            <div id="deepCleaning" class="tabcontent4">
+                <h3>deepCleaning</h3>
+            </div>
+
+            <script>
+                function openCity(evt, cityName) {
+                                    var i, tabcontent, tablinks;
+                                    tabcontent = document.getElementsByClassName("tabcontent4");
+                                    for (i = 0; i < tabcontent.length; i++) {
+                                        tabcontent[i].style.display = "none";
+                                    }
+                                    tablinks = document.getElementsByClassName("tablinks");
+                                    for (i = 0; i < tablinks.length; i++) {
+                                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                    }
+                                    document.getElementById(cityName).style.display = "block";
+                                    evt.currentTarget.className += " active";
+                                }
+
+                                // Get the element with id="defaultOpen" and click on it
+                                document.getElementById("defaultOpen").click();
+            </script>
+        </script>
+
+
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#select").click(function (e) {
+                $(this).children(".option").toggleClass("shown");
+                $(this).toggleClass("open");
+            });
+
+            $(".option").click(function () {
+                $(this).siblings("#selected").html($(this).html());
+
+
+            });
+
+
+            $("input").click(function () {
+                var selection = $("#selected").html();
+                $("#selected").html('<i class="fa fa-chret-down"></i>');
+
+                alert(selection);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

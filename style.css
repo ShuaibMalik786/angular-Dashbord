@@ -1,0 +1,513 @@
+body{
+    background-color: rgb(230, 230, 230);
+    font-family: Tahoma;
+    font-size: 15px
+}
+
+.black{
+    color: black;
+}
+
+.white{
+    color: white;
+}
+
+
+
+#select
+{
+    float: left;
+	background: White;
+	color: black;
+	font-family: Tahoma;
+	font-size: 15px;
+	cursor: pointer;
+    margin: 0px;
+        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.1s;
+}
+
+#select #selected:first-line{
+    font-size: 17px;
+} 
+#select .option
+{
+	background: white;
+	display: none;
+	padding-left: 5px;
+	font-size: 15px; 
+	line-height: 20px;
+	color: black;
+    border-top: none;
+    border-top: 1px solid lightgrey;
+    
+}
+#select .option.shown:first-line
+{
+	font-size: 17px;
+	line-height: 30px;
+    transition: 2s;
+}
+#select .option.shown:hover:first-line { color: #000; }
+#select .shown { display: block; }
+#select .option:hover
+{
+	background: rgb(230, 230, 230);
+}
+
+input
+{
+	margin-top: 10px;
+}
+
+#selected{
+    line-height: 25px;
+    height: 100%;
+
+}
+
+.sm-shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.icon{
+    position: absolute;
+    bottom: 60%;
+}
+@media only screen and (min-width:768px){
+    
+#space{
+    margin: 3%;
+}
+#select{
+    margin-top: 2.5%;
+}
+
+.col-d-1 {width: 5%;}
+.col-d-2 {width: 10%;}
+.col-d-3 {width: 15%;}
+.col-d-4 {width: 20%;}
+.col-d-5 {width: 25%;}
+.col-d-6 {width: 30%;}
+.col-d-7 {width: 35%;}
+.col-d-8 {width: 40%;}
+.col-d-9 {width: 45%;}
+.col-d-10 {width: 50%;}
+.col-d-11 {width: 55%;}
+.col-d-12 {width: 60%;}
+.col-d-13 {width: 65%;}
+.col-d-14 {width: 70%;}
+.col-d-15 {width: 75%;}
+.col-d-16 {width: 80%;}
+.col-d-17 {width: 85%;}
+.col-d-18 {width: 90%;}
+.col-d-19 {width: 95%;}
+.col-d-20 {width: 100%;}
+
+.margintd{
+    margin: 10%;
+}
+
+* {box-sizing: border-box}
+/*---------------------------------------------------*/
+            /* Style the tab */
+            div.tab1 {
+                float: left;
+                width: 10%;
+                height: 600px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            /* Style the buttons inside the tab */
+            div.tab1 button {
+                display: block;
+                background-color: white;
+                color: black;
+                width: 100%;
+                border: none;
+                outline: none;
+                text-align: center;
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 12px;
+                margin-top: 40px;
+
+            }
+
+            /* Change background color of buttons on hover */
+            div.tab1 button:hover {
+                background-color: #ddd;
+            }
+
+            /* Create an active/current "tab button" class */
+            div.tab1 button.active {
+                background-color: orange;
+            }
+
+            /* Style the tab content */
+            .tabcontent1 {
+                float: left;
+                padding: 0px 12px;
+                width: 90%;
+                border-left: none;
+                height: 600px;
+            }
+
+/*---------------------------------------------------*/
+
+             /* Style the tab */
+            div.tab2 {
+                float: left;
+                width: 10%;
+                height: 600px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            /* Style the buttons inside the tab */
+            div.tab2 button {
+                display: block;
+                background-color: white;
+                color: black;
+                width: 100%;
+                border: none;
+                outline: none;
+                text-align: center;
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 12px;
+                margin-top: 40px;
+
+            }
+
+            /* Change background color of buttons on hover */
+            div.tab2 button:hover {
+                background-color: #ddd;
+            }
+
+            /* Create an active/current "tab button" class */
+            div.tab2 button.active {
+                background-color: dodgerblue;
+            }
+
+            /* Style the tab content */
+            .tabcontent2 {
+                float: left;
+                padding: 0px 12px;
+                width: 90%;
+                border-left: none;
+                height: 600px;
+            }
+
+/*---------------------------------------------------*/
+
+             /* Style the tab */
+            div.tab3 {
+                float: left;
+                width: 10%;
+                height: 600px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            /* Style the buttons inside the tab */
+            div.tab3 button {
+                display: block;
+                background-color: white;
+                color: black;
+                width: 100%;
+                border: none;
+                outline: none;
+                text-align: center;
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 12px;
+                margin-top: 40px;
+
+            }
+
+            /* Change background color of buttons on hover */
+            div.tab3 button:hover {
+                background-color: #ddd;
+            }
+
+            /* Create an active/current "tab button" class */
+            div.tab3 button.active {
+                background-color: limegreen;
+            }
+
+            /* Style the tab content */
+            .tabcontent3 {
+                float: left;
+                padding: 0px 12px;
+                width: 90%;
+                border-left: none;
+                height: 600px;
+            }
+
+/*---------------------------------------------------*/
+
+             /* Style the tab */
+            div.tab4 {
+                float: left;
+                width: 10%;
+                height: 600px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            /* Style the buttons inside the tab */
+            div.tab4 button {
+                display: block;
+                background-color: white;
+                color: black;
+                width: 100%;
+                border: none;
+                outline: none;
+                text-align: center;
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 12px;
+                margin-top: 40px;
+
+            }
+
+            /* Change background color of buttons on hover */
+            div.tab4 button:hover {
+                background-color: #ddd;
+            }
+
+            /* Create an active/current "tab button" class */
+            div.tab4 button.active {
+                background-color: rebeccapurple;
+            }
+
+            /* Style the tab content */
+            .tabcontent4 {
+                float: left;
+                padding: 0px 12px;
+                width: 90%;
+                border-left: none;
+                height: 600px;
+            }
+
+
+
+
+}
+
+
+@media only screen and (max-width:768px){
+        #space{
+            margin: 3%;
+        }
+        #paddingtop{
+            padding-top: 4%;
+        }
+
+.col-d-1 {width: 5%;}
+.col-m-2 {width: 10%;}
+.col-m-3 {width: 15%;}
+.col-m-4 {width: 20%;}
+.col-m-5 {width: 25%;}
+.col-m-6 {width: 30%;}
+.col-m-7 {width: 35%;}
+.col-m-8 {width: 40%;}
+.col-m-9 {width: 45%;}
+.col-m-10 {width: 50%;}
+.col-m-11 {width: 55%;}
+.col-m-12 {width: 60%;}
+.col-m-13 {width: 65%;}
+.col-m-14 {width: 70%;}
+.col-m-15 {width: 75%;}
+.col-m-16 {width: 80%;}
+.col-m-17 {width: 85%;}
+.col-m-18 {width: 90%;}
+.col-m-19 {width: 95%;}
+.col-m-20 {width: 100%;}
+
+.scroll{
+            overflow: auto;
+            width: 100%;
+}
+.nopadding{
+    padding: 0px;
+}
+
+.alignleftm{
+    float: left;
+}
+
+/*---------------------------------------------*/
+  * {box-sizing: border-box}
+        /* Style the tab */
+        div.tab1 {
+            overflow: auto;
+            white-space: nowrap;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        /* Style the buttons inside the tab */
+        div.tab1 button {
+           background-color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        /* Change background color of buttons on hover */
+        div.tab1 button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        div.tab1 button.active {
+            background-color: orange;
+            color: white;
+        }
+
+        /* Style the tab content */
+        .tabcontent1 {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+/*---------------------------------------------*/
+        /* Style the tab */
+        div.tab2 {
+            overflow: auto;
+            white-space: nowrap;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        /* Style the buttons inside the tab */
+        div.tab2 button {
+            background-color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        /* Change background color of buttons on hover */
+        div.tab2 button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        div.tab2 button.active {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        /* Style the tab content */
+        .tabcontent2 {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+/*---------------------------------------------*/
+        /* Style the tab */
+        div.tab3 {
+            overflow: auto;
+            white-space: nowrap;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        /* Style the buttons inside the tab */
+        div.tab3 button {
+            background-color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        /* Change background color of buttons on hover */
+        div.tab3 button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        div.tab3 button.active {
+            background-color: limegreen;
+            color: white;
+        }
+
+        /* Style the tab content */
+        .tabcontent3 {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+
+/*---------------------------------------------*/
+        /* Style the tab */
+        div.tab4 {
+            overflow: auto;
+            white-space: nowrap;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        /* Style the buttons inside the tab */
+        div.tab4 button {
+            background-color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        /* Change background color of buttons on hover */
+        div.tab4 button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        div.tab4 button.active {
+            background-color: rebeccapurple;
+            color: white;
+        }
+
+        /* Style the tab content */
+        .tabcontent4 {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td
+{
+    padding: 8px;
+    text-align: left;
+}
+
+tr:last-child{
+     border-bottom: 1px solid #ddd;
+}
